@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Translator",
+    "version": "1.0",
+    "description": "Translate WhatsApp chats and send messages in preferred languages",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "WhatsApp Translator"
+    }
+  }
+  
